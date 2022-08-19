@@ -60,6 +60,7 @@ install_version() {
   (
     mkdir -p "$install_path"
     cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
+    chmod +x $install_path
 
     # TODO: Assert rosa executable exists.
     local tool_cmd
